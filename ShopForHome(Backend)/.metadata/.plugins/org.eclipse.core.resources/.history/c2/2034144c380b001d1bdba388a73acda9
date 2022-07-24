@@ -1,0 +1,5 @@
+package com.shopforhome.cartlist.entity;
+
+public class CartEntity {
+
+}

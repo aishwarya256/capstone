@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.lombok=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=1
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=product-service
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=2.7.2
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=This is a product service where admin can upload new products
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.shopforhome.products
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=11
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=product-service
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.shopforhome.products
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=war
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.version=0.0.1-SNAPSHOT
+org.springframework.ide.eclipse.boot.wizard.initializr.url=https\://start.spring.io\n

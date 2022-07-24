@@ -1,0 +1,7 @@
+package com.shopforhome.products.response;
+
+public class WebResponse {
+	private Boolean status;
+	private String msg;
+	private Object data;
+}
