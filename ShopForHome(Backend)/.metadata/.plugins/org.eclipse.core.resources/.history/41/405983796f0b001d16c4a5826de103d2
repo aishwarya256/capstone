@@ -1,0 +1,13 @@
+package com.shopforhome.cartlist.webresponse;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class WebResponse {
+	
+	private Boolean status;
+	private String msg;
+	private Object data;
+}
