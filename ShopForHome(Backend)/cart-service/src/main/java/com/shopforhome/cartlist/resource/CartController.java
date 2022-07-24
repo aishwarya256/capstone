@@ -33,9 +33,9 @@ public class CartController {
 	@GetMapping("/list/{customerId}")
 	public ResponseEntity<WebResponse> getData(@PathVariable Integer customerId) {
 //		RestTemplate res = new RestTemplate();
-		WebResponse webproducts = res.getForObject("http://localhost:8183/product/list/"+1,WebResponse.class);
+//		WebResponse webproducts = res.getForObject("http://localhost:8183/product/list/"+1,WebResponse.class);
 //		Products product = webproducts.getData();
-		System.out.println("Products:"+webproducts.getData());
+//		System.out.println("Products:"+webproducts.getData());
 		
 		
 		List<CartEntity> data = cartservice.getData(customerId);
