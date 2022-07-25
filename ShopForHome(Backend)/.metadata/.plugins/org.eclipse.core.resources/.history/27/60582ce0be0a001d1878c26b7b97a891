@@ -1,9 +1,0 @@
-package com.wishlist.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.wishlist.entity.WishlistEntity;
-
-public interface WishlistRepo extends JpaRepository<WishlistEntity, Integer> {
-
-}
