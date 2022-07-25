@@ -1,5 +1,0 @@
-package com.shopforhome.products.repository;
-
-public interface ProductRepo {
-
-}
