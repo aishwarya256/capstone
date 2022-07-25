@@ -1,0 +1,25 @@
+package com.shopforhome.cartlist.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.shopforhome.cartlist.entity.CartEntity;
+import com.shopforhome.cartlist.repository.CartRepo;
+
+@Service
+public class CartService {
+
+	@Autowired
+	private CartRepo cartrepo;
+	
+	public List<CartEntity> getData(Integer customerId){
+		List<CartEntity> user_cartlist = new ArrayList<CartEntity>();
+		List<CartEntity> list = cartrepo.findAll();
+		if(list.isEmpty()) {
+			return 
+		}
+	}
+}

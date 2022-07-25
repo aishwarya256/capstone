@@ -1,0 +1,11 @@
+package com.wishlist.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.wishlist.entity.WishlistEntity;
+
+public interface WishlistRepo extends JpaRepository<WishlistEntity, Integer> {
+List<WishlistEntity> findByCustomer_id(Integer customer_id);
+}
