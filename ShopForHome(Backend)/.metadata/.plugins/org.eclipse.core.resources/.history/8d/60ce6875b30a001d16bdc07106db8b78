@@ -1,0 +1,18 @@
+package com.wishlist.model;
+
+import javax.persistence.Column;
+
+public class WishlistModel {
+
+	
+	private Integer product_id;
+	
+	
+	private String image_url;
+	
+	
+	private String product_type;
+	
+	
+	private Integer customer_id; 
+}
