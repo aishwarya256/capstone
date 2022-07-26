@@ -1,0 +1,5 @@
+package com.shopforhome.products.response;
+
+public class WebResponse {
+
+}

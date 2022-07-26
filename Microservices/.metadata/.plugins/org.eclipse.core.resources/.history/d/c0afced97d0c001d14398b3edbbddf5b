@@ -1,0 +1,26 @@
+package com.shopforhome.discountservice.resource;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.shopforhome.discountservice.model.DiscountModel;
+import com.shopforhome.discountservice.response.WebResponse;
+@RestController
+@RequestMapping("/discount")
+public class DiscountController {
+
+	@PostMapping("/setDiscount")
+	public ResponseEntity<WebResponse> setDiscount(@RequestBody DiscountModel discountmodel){
+		float actual_price = discountmodel.getActual_price();
+		float discount_price = discountmodel.getDiscount_percentage()/100f*actual_price;
+		System.out.println("before discount:"+discount_price);
+		Integer new1_price = Math.round(discount_price);
+		Integer new2_price = discountmodel.getActual_price()-new1_price;
+		System.out.println("after rounding:"+new2_price);
+		
+		return ResponseEntity.ok(new WebResponse(true,"testing",new2_price));
+	}
+}

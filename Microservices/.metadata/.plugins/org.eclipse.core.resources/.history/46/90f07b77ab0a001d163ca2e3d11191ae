@@ -1,0 +1,33 @@
+package com.wishlist.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+import net.bytebuddy.dynamic.loading.ClassReloadingStrategy.Strategy;
+
+@Entity
+@Table(name="wishListTable")
+@Data
+public class WishlistTable {
+	
+	@Id
+	@Column(name = "wishList_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	
+	@Column(name="product_id")
+	private int product_id;
+	
+	@Column(name="product_type")
+	private String product_type;
+	
+	
+	
+	
+	
+}

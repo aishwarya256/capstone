@@ -1,0 +1,10 @@
+package com.shopforhome.discountservice.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class DiscountService {
+	
+//	To add new discount on a specific product
+
+}

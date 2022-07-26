@@ -1,0 +1,5 @@
+package com.shopforhome.discountservice.service;
+
+public class DiscountService {
+
+}

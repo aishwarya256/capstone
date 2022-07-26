@@ -1,0 +1,5 @@
+package com.shopforhome.discountservice.resource;
+
+public class DiscountController {
+
+}

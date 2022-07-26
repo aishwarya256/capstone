@@ -1,0 +1,27 @@
+package com.wishlist.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Table(name="wishListTable")
+@Data
+public class WishlistTable {
+	
+	@Id
+	@Column(name = "wishList_id")
+	@GeneratedValue(strategy = )
+	
+	
+	@Column(name="product_id")
+	private int product_id;
+	
+	
+	
+	
+	
+}

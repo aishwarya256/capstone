@@ -1,0 +1,5 @@
+package com.shopforhome.discountservice.entity;
+
+public class DiscountEntity {
+
+}

@@ -1,0 +1,17 @@
+package com.shopforhome.discountservice.model;
+
+import javax.persistence.Column;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class DiscountModel {
+	
+	private Integer product_id;
+	private Integer discount_percentage;
+	private Integer actual_price;
+}

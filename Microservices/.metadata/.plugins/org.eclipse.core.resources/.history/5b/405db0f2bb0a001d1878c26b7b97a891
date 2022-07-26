@@ -1,0 +1,48 @@
+package com.wishlist.resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.wishlist.entity.WishlistEntity;
+import com.wishlist.response.WebResponse;
+import com.wishlist.service.WishlistService;
+
+@RestController
+@RequestMapping("/wishlist")
+public class WishListController {
+
+	@Autowired
+	private WishlistService wishlistservice;
+	
+	@GetMapping("/listData")
+	public String get() {
+		return "Hello wrold";
+	}
+	
+	@PostMapping("/save")
+	public ResponseEntity<WebResponse> saveWishlistData(@RequestBody WishlistEntity wishlistentity) {
+		System.out.println("Image url:");
+		System.out.println(wishlistentity.getImage_url());
+		System.out.println("Id of wishlist");
+		System.out.print(wishlistentity.getWishList_id())
+		Boolean status = wishlistservice.saveData(wishlistentity);
+		if(status)
+			return ResponseEntity.ok(new WebResponse(true,"Wish list saved"));
+		else
+			return ResponseEntity.badRequest().body(new WebResponse(false, "Data not saved!"));
+	}
+	
+	@DeleteMapping("/delete/{wl_id}")
+	public ResponseEntity<WebResponse> deleteWishlistData(@PathVariable Integer wl_id){
+		
+	}
+	
+
+}

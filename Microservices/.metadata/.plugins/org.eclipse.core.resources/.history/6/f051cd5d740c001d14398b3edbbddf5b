@@ -1,0 +1,8 @@
+package com.shopforhome.discountservice.model;
+
+public class DiscountModel {
+	
+	private Integer product_id;
+	private Integer discount_percentage;
+	private Boolean discount_enabled;
+}

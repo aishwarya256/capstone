@@ -1,0 +1,18 @@
+package com.shopforhome.products.service;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.shopforhome.products.entity.ProductsEntity;
+import com.shopforhome.products.repository.ProductRepo;
+
+@Service
+public class ProductService {
+
+	@Autowired
+	private ProductRepo productrepo;
+	
+	public List<ProductsEntity> getData(){
+		return productrepo.findAll();
+	}
+}
