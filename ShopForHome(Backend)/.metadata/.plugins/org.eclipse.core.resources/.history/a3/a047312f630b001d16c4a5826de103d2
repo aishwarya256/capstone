@@ -1,9 +1,0 @@
-package com.shopforhome.products.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.shopforhome.products.entity.ProductsEntity;
-
-public interface ProductRepo extends JpaRepository<ProductsEntity, Integer> {
-
-}

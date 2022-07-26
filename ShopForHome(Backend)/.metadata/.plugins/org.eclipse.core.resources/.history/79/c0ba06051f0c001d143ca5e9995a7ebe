@@ -1,6 +1,0 @@
-package com.shopforhome.cartlist.model;
-
-public class ProductInfo {
-		private Integer product_id;
-		private Integer customer_id;
-}
